@@ -7,6 +7,21 @@
 
 }*/
 
+.title{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background-image: url(./assets/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	min-height: 300px;
+
+}
+
 .container_cards{
 
 	/* Flexbox */
