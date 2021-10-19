@@ -18,7 +18,6 @@ body{
 *{
 
 	font-family: 'Poppins', sans-serif;
-	color: white;
 	text-align: center;
 
 }
@@ -32,6 +31,7 @@ header > ul{
 	top: 0;
 	background-color: #194656;
 	width: 100%;
+	color: white;
 
 }
 
@@ -66,6 +66,14 @@ header > ul > li{
 
 }
 
+
+
+/***************
+*** Tarjetas ***
+***************/
+
+
+
 .container_cards{
 
 	/* Flexbox */
@@ -87,6 +95,11 @@ header > ul > li{
 
 .container_cards > div{
 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
 	/* Web Scaffolding */
 	min-width: 200px;
 	max-width: 200px;
@@ -100,38 +113,28 @@ header > ul > li{
 
 }
 
-/*@media screen and (max-width: 700px){
+.container_cards > div > a{
 
-	body{
-		background-color: #ff00ff;
-	}
-
-	.item_cards_3{
-		grid-column: 1 / span 2;
-	}
-
-	.container_cards{
-		grid-template-columns: 1fr 1fr;
-	}
+	background-color: #bbe542;
+	margin-bottom: 15px;
+	padding: 15px 10px;
+	border-radius: 10px;
 
 }
 
-@media screen and (max-width: 450px){
+.container_cards > div > p{
 
-	body{
-		background-color: #ffff00;
-	}
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
 
-	.container_cards{
-		grid-template-columns: 1fr;
-	}
-
-}*/
+}
 
 footer{
 
 
 	background-color: #194656;
 	min-height: 200px;
+	color: white;
 
 }
