@@ -46,11 +46,30 @@ header > ul > li{
 
 }
 
+header > ul > li > a{
+
+	color: white;
+	text-decoration: none;
+
+}
+
+header > ul > li > a:hover{
+
+	text-decoration: underline;
+
+}
+
 @media screen and (max-width: 768px){
 
 	header > ul > li{
 		display: block;
 	}
+
+}
+
+main{
+
+	margin-top: 39px;
 
 }
 
@@ -66,7 +85,6 @@ header > ul > li{
 	background-size: cover;
 
 	min-height: 300px;
-	margin-top: 39px;
 
 }
 
@@ -123,6 +141,14 @@ header > ul > li{
 	margin-bottom: 15px;
 	padding: 15px 10px;
 	border-radius: 10px;
+	text-decoration: none;
+	color: black;
+
+}
+
+.container_cards > div > a:hover{
+
+	text-decoration: underline;
 
 }
 
@@ -134,12 +160,47 @@ header > ul > li{
 
 }
 
+/*****************
+***** Footer *****
+*****************/
+
 footer{
 
 
 	background-color: #194656;
 	min-height: 200px;
 	color: white;
+
+}
+
+.footer_container{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+.footer_container > div > a{
+
+	display: block;
+	margin: 10px;
+
+	text-decoration: none;
+	color: white;
+
+}
+
+.footer_container > div > a:hover{
+
+	text-decoration: underline;
+
+}
+
+@media screen and (max-width: 768px){
+
+	.footer_container{
+		grid-template-columns: 1fr;
+	}
 
 }
 
@@ -154,6 +215,82 @@ iframe{
 	margin: 0;
 	padding: 0 10%;
 	border-style: none;
-	background-color: #194656;
+	background-color: #42bbe5;
+
+}
+
+/********************
+**** Flash Cards ****
+********************/
+
+.flash_cards_container_container{
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+	margin: 100px 0;
+
+}
+
+.flash_cards_container{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-content: center;
+
+	width: 90%;
+
+}
+
+.sign{
+
+	grid-column: 1 / span 2;
+	margin-bottom: 5%;
+
+}
+
+@media screen and (max-width: 768px){
+
+	.flash_cards_container{
+		grid-template-columns: 1fr;
+	}
+
+	.sign{
+		grid-column: 1;
+	}
+
+}
+
+/*.options{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	background-color: #42bbe5;
+	border-radius: 3px;
+
+}*/
+
+[class*="option"]{
+
+	display: flex;
+	justify-content: space-around;
+
+	background-color: #bbe542;
+	border-radius: 3px;
+
+	/* Transition */
+	transition: 0.2s;
+
+	/* Grid */
+	margin: 1%;
+
+}
+
+[class*="option"]:hover{
+
+	/* Transition */
+	background-color: #a4c83a;
 
 }
