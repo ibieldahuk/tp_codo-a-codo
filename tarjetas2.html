@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="./styles/style.css">
+		<script src="./flash_cards.js"></script>
 	</head>
 	<body>
 		<!-- Nav Bar -->
@@ -15,9 +16,27 @@
 		</header>
 		<!-- Body -->
 		<main>
-			<h1>Lista de señales</h1>
-			<p>Para que puedas aprender o consultar señales de trásito te recomendamos el siguiente archivo del gobierno nacional.</p>
-			<iframe src="https://www.argentina.gob.ar/sites/default/files/ansv_licencias_libro_senales_de_transito.pdf"></iframe>
+		<div class="flash_cards_container_container">
+			<div class="flash_cards_container">
+				<div class="sign">
+					<img src="./assets/señales/index.jpeg">
+				</div>
+				<!--<div class="options">-->
+					<div class="option_1" onclick="colorStuff()">
+						<p>Señal reglamentaria</p>
+					</div>
+					<div class="option_2" onclick="colorStuff()">
+						<p>Señal preventiva</p>
+					</div>
+					<div class="option_3" onclick="colorStuff()">
+						<p>Señal informativa</p>
+					</div>
+					<div class="option_4" onclick="colorStuff()">
+						<p>Demarcación</p>
+					</div>
+				<!--</div>-->
+			</div>
+		</div>
 		</main>
 		<!-- Footer -->
 		<footer>
